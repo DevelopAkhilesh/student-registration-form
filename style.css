@@ -159,7 +159,7 @@ tbody tr:hover{
     background:#6c757d;
     color:white;
     border:none;
-    padding:8px 14px;
+    padding:6px 10px;
     border-radius:5px;
     cursor:pointer;
 }
@@ -190,7 +190,7 @@ tbody tr:hover{
     color:white;
     border-radius:4px;
     cursor:pointer;
-    margin-left:5px;
+    
     margin-top: 5px;
 }
 .edit_data_btn{
@@ -203,8 +203,19 @@ tbody tr:hover{
     cursor:pointer;
 }
 
+
+
+
 /* Mobile Responsive Table */
-@media (max-width:768px){
+@media (max-width:600px){
+    #main_form{
+    grid-template-columns:1fr;
+}
+
+/* Buttons full width */
+.submit_btn{
+    width:100%;
+}
 
     table, thead, tbody, th, td, tr{
         display:block;
@@ -266,5 +277,14 @@ tbody tr:hover{
         font-weight:bold;
         color:#333;
     }
+
+    .edit_data_btn,
+.delete_data_btn{
+    width:100%;
+    max-width: 130px;
+    padding:5px;
+    font-size:14px;
+}
+
 
 }

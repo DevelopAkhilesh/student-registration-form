@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Student Registration System</h1>
+        <p>Collect student Data</p>
+    </header>
+
+    <!--Main container-->
+    <div class="container">
+        <form  id="main_form">
+            <input type="text" id="student_Name" placeholder="Enter the Name" required pattern="[A-Z/a-z]+" title="Name should only contain letters">
+            <input type="text" id="student_Id" placeholder="student id" required pattern="[0-9]+" title="Student id only accept numbers">
+            <input type="email" id = "student_Email" placeholder="Email Id" required>
+
+            <input type="text" id ="student_Contact" placeholder="Contact Number" required pattern="[0-9]{10,}" title="Contact must be atlest 10 diigts">
+            <button type="submit" class="submit_btn" id="submit_btn">Submit Details</button>
+            <button class="submit_btn" id="reset_btn">Reset Form</button>
+        </form>
+<!-- Student data table-->
+        <div class="table_container">
+            <table>
+                <tHead>
+                    <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Student ID
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Contact
+                    </th>
+                    <th>
+                        Action
+                    </th>
+
+                </tr>
+                </tHead>
+
+                <tbody id="student_table">
+
+                </tbody>
+                
+
+            </table>
+
+        </div>
+    </div>
+<!--delete model message-->
+<div class ="delete_popup" id = "delete_popup">
+    <div class="popup_content">
+        <p>Are you sure want to delete this information</p>
+        <button id = "conformDelete" class="delete-btn">Delete</button>
+        <button id = "cancelDelete" class="cancel-btn">Cancel</button>
+    </div>
+</div>
+
+<!--Error message-->
+<div id = "error_popup" class="error_popup">
+    <div class="error_content">
+        <p id="error_message"></p>
+        <button id ="closeError" class="add_btn">OK</button>
+    </div>
+</div>
+
+ <script src="script.js"></script>   
+</body>
+</html>

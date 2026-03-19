@@ -117,7 +117,7 @@ function showStudent(){ // to show the data on the dom
         "<td>"+ student_Data[i].email +"</td>"+
         "<td>"+ student_Data[i].number +"</td>"+
         "<td>"+
-        "<button class = 'edit_data_btn' onclick= 'editStudent("+i+")'>Edit</button>"+
+        "<button class = 'edit_data_btn' onclick= 'editStudent("+i+")'>Update</button>"+
         "<button class = 'delete_data_btn' onclick= 'deleteStudent("+i+")'>Delete</button>"+
         "</td>"+
         "</tr>"

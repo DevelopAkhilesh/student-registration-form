@@ -35,14 +35,6 @@ let student_Data = JSON.parse(localStorage.getItem("studentData"))||[]; // to st
 
 let edit_Index = -1; // data varibles.
 
-// let saved_Student = localStorage.getItem("student_Data");// getting the data of student from the local storage
-
-// if(saved_Student!==null){
-//     student_Data = JSON.parse(saved_Student);
-// }
-
-
-
 
 
 // Extracting the values from input value
@@ -183,7 +175,7 @@ closeError_btn.addEventListener("click",()=>{
 
 
 
-
+// for scroll bar
 
 function updateScrollBar(){
     if(student_Data.length>4){

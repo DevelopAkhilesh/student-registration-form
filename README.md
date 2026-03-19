@@ -1,1 +1,1 @@
-So this is a student registration system
+This is a student registration system.

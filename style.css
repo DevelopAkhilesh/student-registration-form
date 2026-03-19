@@ -91,7 +91,7 @@ thead{
 }
 
 th, td{
-    padding:12px;
+    padding:6px;
     text-align:center;
     border-bottom:1px solid #ddd;
 }
@@ -190,7 +190,7 @@ tbody tr:hover{
     color:white;
     border-radius:4px;
     cursor:pointer;
-    
+    margin-left: 2px;
     margin-top: 5px;
 }
 .edit_data_btn{
@@ -200,6 +200,7 @@ tbody tr:hover{
     padding:6px ;
     color:white;
     border-radius:4px;
+    
     cursor:pointer;
 }
 
@@ -207,7 +208,7 @@ tbody tr:hover{
 
 
 /* Mobile Responsive Table */
-@media (max-width:600px){
+@media (max-width:640px){
     #main_form{
     grid-template-columns:1fr;
 }
@@ -288,3 +289,42 @@ tbody tr:hover{
 
 
 }
+
+
+@media (min-width:641px) and (max-width:1024px){
+
+.container{
+    width:90%;
+}
+
+/* Form two columns */
+#main_form{
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+/* Table adjustments */
+table{
+    width:100%;
+    table-layout:fixed;
+}
+
+th, td{
+    padding:10px;
+    font-size:14px;
+}
+
+td{
+    word-break:break-word;
+}
+
+/* Buttons side by side */
+.edit_data_btn,
+.delete_data_btn{
+    padding:8px 12px;
+    word-break: normal;
+}
+
+}
+
+

@@ -154,7 +154,7 @@ tbody tr:hover{
     margin-bottom:20px;
     font-size:16px;
 }
-/* cancel button */
+
 .cancel-btn{
     background:#6c757d;
     color:white;
@@ -181,7 +181,7 @@ tbody tr:hover{
     background:#007bff;
 }
 
-/*studnt data buttons*/
+
 .delete_data_btn{
     background:#dc3545;
     width: 60px;
@@ -213,7 +213,7 @@ tbody tr:hover{
     grid-template-columns:1fr;
 }
 
-/* Buttons full width */
+
 .submit_btn{
     width:100%;
 }
@@ -297,13 +297,13 @@ tbody tr:hover{
     width:90%;
 }
 
-/* Form two columns */
+
 #main_form{
     grid-template-columns:1fr 1fr;
     gap:12px;
 }
 
-/* Table adjustments */
+
 table{
     width:100%;
     table-layout:fixed;
@@ -318,7 +318,7 @@ td{
     word-break:break-word;
 }
 
-/* Buttons side by side */
+
 .edit_data_btn,
 .delete_data_btn{
     padding:8px 12px;
